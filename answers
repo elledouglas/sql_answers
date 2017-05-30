@@ -1,0 +1,37 @@
+SELECT * from robots
+WHERE source = 'The Hitchhiker''s Guide to the Galaxy';
+
+SELECT * FROM robots
+WHERE personality = 'anxious';
+
+SELECT name FROM recipes
+WHERE nut_free = true;
+
+SELECT COUNT(gluten_free) from recipes;
+
+SELECT COUNT(name) FROM recipes WHERE gluten_free = true AND vegetarian = false;
+
+SELECT MAX(number_of_legs) AS MostLegs
+FROM Animals;
+
+SELECT MIN(mins_to_play) AS LeastAmountofTime
+FROM board_games;
+
+SELECT MAX(minutes_required) AS Longesttomaker
+FROM recipes;
+
+SELECT name FROM robots
+WHERE name LIKE 'M%';
+
+SELECT name FROM board_games WHere min_players <= 8 AND max_players >=8;
+
+SELECT name
+FROM animals
+WHERE swimming = true AND egg_laying = true;
+
+SELECT name
+FROM animals
+WHERE swimming = true AND egg_laying = true AND flying = false;
+
+SELECT MAX(max_players)
+FROM board_games;
